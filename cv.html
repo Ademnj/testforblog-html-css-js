@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Portfolyo | Adem Karpuz</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CV Sayfasına Özel Ek Stiller */
+        body { background: #0f172a; color: white; overflow-x: hidden; }
+        
+        .cv-hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+
+        /* Haraketli Hakkımda Kutusu */
+        .about-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 700px;
+            animation: slowFloat 8s infinite ease-in-out; /* Sağa sola yavaş hareket */
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes slowFloat {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            25% { transform: translateX(20px) translateY(-10px); }
+            75% { transform: translateX(-20px) translateY(10px); }
+        }
+
+        .social-icons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover { color: var(--accent); transform: translateY(-5px); }
+
+        /* Sertifika ve Yetenekler Alanı */
+        .cv-section { padding: 100px 0; }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .skill-tag {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background: rgba(175, 178, 184, 0.9);">
+        <div class="container">
+            <a href="index.html" class="logo">ADEMKARPUZ<span></span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Geri Dön</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="cv-hero">
+        <div class="about-box">
+            <h2 style="color: var(--accent); margin-bottom: 15px;">Hakkımda</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Uluslararası Ticaret ve Lojistik alanında temel bilgiye sahip, detaylara önem veren bir Veri Analisti adayı. Tedarik zinciri süreçlerini optimize etmek, operasyonları kolaylaştırmak ve stratejik iş kararlarını yönlendirmek için verilerden yararlanmaya tutkuyla bağlı. Python, Tableau ve Google Sheets'te yetkin, proje yönetimi ve iş analizi konusunda güçlü bir anlayışa sahip. Analitik ve problem çözme becerilerini gerçek dünya veri sorunlarına uygulamaya istekli.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ademkzj/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ademnj"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/ademkzj/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="container cv-section">
+        <h2 data-aos="fade-up">Eğitim</h2>
+        <div class="grid-layout">
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">Kahramanmaraş Sütçü İmam Üniversitesi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022 - Devam Ediyor</h3>
+                    <p>Uluslararası Ticaret Ve Lojistik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container cv-section">
+        <h2 data-aos="fade-up">Sertifikalar</h2>
+        <div class="grid-layout">
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">Career Essentials in Data Analysis</h3>
+                    <p>Microsoft</p>
+                    <div class="skill-tag">Veri Analizi</div>
+
+                </div>
+            </div>
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="post-body">
+                    <h3 style="color:white">Business Analysis & Process Management</h3>
+                    <p>Coursera</p>
+                    <div class="skill-tag">İş Analizi</div><div class="skill-tag">Süreç Yönetimi</div>
+
+
+                </div>
+            </div>
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">Business Analysis Foundations</h3>
+                    <p>International Institute of Business Analysis™ (IIBA®)</p>
+                    <div class="skill-tag">İş Analizi</div>
+                </div>
+            </div>
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">Project Management Foundations</h3>
+                    <p>LinkedIn</p>
+                    <div class="skill-tag">Proje Yönetimi</div>
+                </div>
+            </div>
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">Basics of Project Management</h3>
+                    <p>International Business Management Institute (IBMI)</p>
+                    <div class="skill-tag">Proje Yönetimi</div>
+                </div>
+            </div>
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">PCAP – Programming Essentials in Python</h3>
+                    <p>Cisco Networking Academy</p>
+                    <div class="skill-tag">Python (Programlama Dili)</div>
+                </div>
+            </div>
+            <div class="post-card" style="background: #1e293b;" data-aos="zoom-in-up">
+                <div class="post-body">
+                    <h3 style="color:white">Girişimcilikte Sunum Teknikleri ve İletişim Yönetimi</h3>
+                    <p>BTK Akademi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container cv-section">
+        <h2 data-aos="fade-right">Teknik Yetenekler</h2>
+        <div style="margin-top:30px;" data-aos="fade-left">
+            <div class="skill-tag">SQL</div>
+            <div class="skill-tag">Python (Programlama Dili)</div>
+            <div class="skill-tag">İleri Excel</div>
+            <div class="skill-tag">Tableau / PowerBI</div>
+            <div class="skill-tag">Google Sheets</div>
+            <div class="skill-tag">İngilizce (A2)</div>
+            <div class="skill-tag">Proje Yönetimi</div>
+            <div class="skill-tag">Temel (HTML-CSS)</div>
+
+            <div class="skill-tag">C (Programlama Dili)</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Adem Karpuz &copy; 2026 | Portfolyo</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS kütüphanesini başlatıyoruz
+        AOS.init({
+            duration: 1000, // Animasyon süresi (1 saniye)
+            once: false,    // Yukarı kaydırınca tekrar çalışsın mı?
+            offset: 200     // Görünmeden ne kadar önce başlasın
+        });
+    </script>
+</body>
+</html>

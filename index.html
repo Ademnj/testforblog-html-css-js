@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adem Karpuz - Portfolyo & Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">ADEM<span>KARPUZ</span></a>
+            <ul class="nav-links">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#blog">Analizler</a></li>
+                <li><a href="cv.html">CV / Portfolyo</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="welcome-tag">HOŞ GELDİNİZ</p>
+            <h1>Ben Adem Karpuz</h1>
+            <p>KSU Uluslararası Ticaret ve Lojistik Öğrencisi</p>
+            <p>Bu sayfada İşinize yarayabilecek Sektörel analiz,Vaka analizi ve teknik rehber içerikleri bulunuyor.</p>
+            <a href="#blog" class="cta-btn">Vaka Analizlerini İncele</a>
+        </div>
+    </header>
+
+    <section class="container" id="blog">
+        <div class="category-filter">
+            <h2>Son Analizler</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="sektorel">Sektörel Analiz</button>
+                <button class="filter-btn" data-filter="vaka">Vaka Analizi</button>
+                <button class="filter-btn" data-filter="teknik">Teknik Rehber</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container post-section">
+        <div class="post-grid" id="postGrid">
+            
+            <article class="post-card" data-category="sektorel">
+                <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="post-body">
+                    <span class="tag">Sektörel Analiz</span>
+                    <h3>Kızıldeniz Krizi ve Navlun</h3>
+                    <p>Küresel ticaret rotalarındaki değişimlerin maliyetlere etkisini verilerle inceliyoruz.</p>
+                    <a href="kizildeniz_krizi.html" class="read-more">Analizi Oku →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="vaka">
+                <div class="post-img" style="background-image: url(amazon.jpg);"></div>
+                <div class="post-body">
+                    <span class="tag">Vaka Analizi</span>
+                    <h3>Amazon Lojistik Stratejisi</h3>
+                    <p>Prime teslimat sisteminin arkasındaki yapay zeka ve depolama hiyerarşisi.</p>
+                    <a href="amazon_lojistik_strateji.html" class="read-more">Analizi Oku →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="teknik">
+                <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="post-body">
+                    <span class="tag">Teknik Rehber</span>
+                    <h3>Incoterms 2020 Özet</h3>
+                    <p>Dış ticarette teslim şekilleri ve risk transfer noktaları hakkında kapsamlı rehber.</p>
+                    <a href="incoterms_2020.html" class="read-more">Analizi Oku →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="teknik">
+                <div class="post-img" style="background-image: url('eticaret.jpeg');"></div>
+                <div class="post-body">
+                    <span class="tag">Teknik Rehber</span>
+                    <h3>E-Ticaretin Görünmez Devrimi</h3>
+                    <p>Günümüzde e-ticaret sitelerinden bir ürün sipariş ettiğimizde, o ürünün sadece birkaç...</p>
+                    <a href="eticaret.html" class="read-more">Analizi Oku →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="teknik">
+                <div class="post-img" style="background-image: url('endustriyapayzeka.png');"></div>
+                <div class="post-body">
+                    <span class="tag">Teknik Rehber</span>
+                    <h3>Endüstri 4.0 ve Yapay Zeka</h3>
+                    <p>Küresel ticaret, tarihinin en büyük kırılma noktalarından birini yaşıyor...</p>
+                    <a href="endüstri_4_yapay_zeka.html" class="read-more">Analizi Oku →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>Adem Karpuz</strong> | Interested in Data Scientist, Business Strategy, and Global Trade &copy; </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
